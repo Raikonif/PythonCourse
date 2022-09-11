@@ -52,12 +52,12 @@ def compare_selections(computer_option, user_option):
             print("You win")
         elif user_option == 3 and computer_option == 1:
             print("You lose")
-        else:
-            print("Invalid selection")
 
 
 if __name__ == "__main__":
     while run:
+
+        invalid = True
         print("SELECT YOUR OPTION")
         print("1. Rock")
         print("2. Paper")
@@ -66,17 +66,19 @@ if __name__ == "__main__":
 
         try:
             input_user = int(input("Enter your choice: "))
+
             if validate_input_user(input_user):
                 default_option = random.randint(1, 3)
                 compare_selections(default_option, input_user)
                 print("=====================================")
                 print(get_selection_option(input_user))
-                print("=====================================")
+                print(get_computer_option(default_option))
                 print("===============Result================")
-                print(compare_selections(default_option, input_user))
+                compare_selections(default_option, input_user)
                 print("===========Wanna Try Again?==========")
                 print("1. Yes")
                 print("2. No")
+
                 while invalid:
                     try:
                         input_wanna_play = int(input("Your Answer: "))
@@ -90,10 +92,13 @@ if __name__ == "__main__":
                         invalid = False
                     except ValueError:
                         print("Please enter a valid option")
+                        invalid = True
                         continue
+
             else:
                 print("Invalid number")
 
         except ValueError:
             print("Invalid input")
+            run = True
             continue
