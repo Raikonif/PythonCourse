@@ -92,7 +92,6 @@ if __name__ == "__main__":
                         invalid = False
                     except ValueError:
                         print("Please enter a valid option")
-                        invalid = True
                         continue
 
             else:
@@ -100,5 +99,4 @@ if __name__ == "__main__":
 
         except ValueError:
             print("Invalid input")
-            run = True
             continue
