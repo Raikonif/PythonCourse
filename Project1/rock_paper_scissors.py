@@ -69,7 +69,6 @@ if __name__ == "__main__":
 
             if validate_input_user(input_user):
                 default_option = random.randint(1, 3)
-                compare_selections(default_option, input_user)
                 print("=====================================")
                 print(get_selection_option(input_user))
                 print(get_computer_option(default_option))
