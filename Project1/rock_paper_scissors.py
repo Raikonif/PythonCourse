@@ -7,6 +7,8 @@ import random
     4. If both players choose the same object, it's a draw
     5. The game is played until the players wanna stop
     The variables are controlled by use cases"""
+
+
 default_option = 3
 run = True
 invalid = True
