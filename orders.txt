@@ -1,0 +1,10 @@
+first write Raikonif 
+second write testing 
+
+['order 1', 'order 1', 'order 2', 'order 2']
+7.0
+['order 1', 'order 2', 'order 2']
+['order 1', 'order 2', 'order 2']
+['order 1', 'order 2']
+['order 1', 'order 2', 'order 2']
+Total: 6.00
